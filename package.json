@@ -1,0 +1,23 @@
+{
+  "name": "styles-reset",
+  "version": "0.0.0",
+  "description": "Yet another CSS Reset :-)",
+  "main": "styles-reset.css",
+  "scripts": {
+    "test": "echo \"Warning: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webextensions/styles-reset.git"
+  },
+  "keywords": [
+    "css",
+    "reset"
+  ],
+  "author": "Priyank Parashar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webextensions/styles-reset/issues"
+  },
+  "homepage": "https://github.com/webextensions/styles-reset#readme"
+}

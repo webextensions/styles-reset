@@ -1,0 +1,68 @@
+/*
+    References:
+        https://github.com/filipelinhares/ress/blob/master/ress.css
+        https://github.com/jtrost/Complete-CSS-Reset/blob/master/reset.css
+        https://github.com/jgthms/minireset.css/blob/master/minireset.css
+        https://github.com/jasonkarns/css-reset/blob/master/reset.css
+        http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset.css
+        https://github.com/shannonmoeller/reset-css/blob/master/reset.css
+        https://github.com/RafaelDeJongh/Rafael-CSS-Reset/blob/gh-pages/reset.css
+        https://github.com/jaydenseric/Fix/blob/master/fix.css
+        https://github.com/necolas/normalize.css/blob/master/normalize.css
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;                  /* Helpful for tags like: hr */
+    vertical-align: baseline;
+    font-size: 100%;            /* Helpful for tags like: h1, h2, h3, h4, h5, h6 */
+    font-style: normal;         /* Helpful for tags like: address, cite, dfn, em, var */
+    font-weight: normal;        /* Helpful for tags like: strong, h1, h2, h3, h4, h5, h6 */
+}
+
+/* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+    box-sizing: border-box;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+*, ::before, ::after {
+    background-repeat: no-repeat;
+}
+
+html {
+    /* https://www.smashingmagazine.com/2009/09/complete-guide-to-css-font-stacks/#the-myth-of-web-safe-fonts */
+    /* http://code.stephenmorley.org/html-and-css/the-myth-of-web-safe-fonts/#narrowsansserif */
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+* {
+    font-family: inherit;   /* Helpful for tags like: code, kbd, samp, tt */
+}
+
+body {
+    line-height: normal;    /* Don't reset line-height to "1" as many of the CSS Reset libraries do because that reduces readability */
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+blockquote, q {
+    quotes: none;
+}
+blockquote::before, blockquote::after, q::before, q::after {
+    content: '';
+    content: none;
+}
