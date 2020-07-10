@@ -27,7 +27,6 @@ html {
     vertical-align: baseline;
     font-size: 100%;            /* Helpful for tags like: h1, h2, h3, h4, h5, h6 */
     font-style: normal;         /* Helpful for tags like: address, cite, dfn, em, var */
-    font-weight: normal;        /* Helpful for tags like: strong, h1, h2, h3, h4, h5, h6 */
 }
 
 * {
@@ -37,6 +36,13 @@ html {
     /* https://www.smashingmagazine.com/2009/09/complete-guide-to-css-font-stacks/#the-myth-of-web-safe-fonts */
     /* http://code.stephenmorley.org/html-and-css/the-myth-of-web-safe-fonts/#narrowsansserif */
     font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+* {
+    font-weight: inherit;        /* Helpful for tags like: strong, h1, h2, h3, h4, h5, h6 */
+}
+html {
+    font-weight: normal;
 }
 
 *:not(input):not(button) {
