@@ -12,14 +12,18 @@
 */
 
 /* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-*, ::before, ::after {
+*,
+::before,
+::after {
     box-sizing: inherit;
 }
 html {
     box-sizing: border-box;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     background-repeat: no-repeat;
 }
 
@@ -65,18 +69,24 @@ table {
     border-spacing: 0;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-caption, th {
+caption,
+th {
     text-align: left;
 }
 
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
-blockquote::before, blockquote::after, q::before, q::after {
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
     content: '';
     content: none;
 }
