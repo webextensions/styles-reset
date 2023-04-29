@@ -49,14 +49,32 @@ html {
     font-weight: normal;
 }
 
-*:not(input):not(button) {
+* {
+    word-break: break-word;
+}
+
+*:not(button, dialog, input) {
     margin: 0;
     padding: 0;
     border: 0;                  /* Helpful for tags like: hr */
 }
 
+html {
+    /*
+        Disable the text inflation algorithm used on some smartphones and tablets.
+        Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
+    */
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
 body {
     line-height: normal;        /* Don't reset line-height to "1" as many of the CSS Reset libraries do because that reduces readability */
+}
+
+iframe,
+img {
+    display: block;
 }
 
 iframe {
