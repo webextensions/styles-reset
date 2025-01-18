@@ -53,7 +53,7 @@ html {
     word-break: break-word;
 }
 
-*:not(button, dialog, input) {
+*:not(button, dialog, input, textarea) {
     margin: 0;
     padding: 0;
     border: 0;                  /* Helpful for tags like: hr */
